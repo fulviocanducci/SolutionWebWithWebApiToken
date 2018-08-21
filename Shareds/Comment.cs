@@ -2,10 +2,10 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebAppFullFrameworkApi.Models
+namespace Shareds
 {
-    [Table("Comments")]
-    public class Comment
+    [Table("comments")]
+    public sealed class Comment
     {
         [Key()]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

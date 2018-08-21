@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using Shareds;
+using System.Data.Entity;
 
 namespace WebAppFullFrameworkApi.Models
 {

@@ -25,10 +25,9 @@ namespace WebAppFullFrameworkApi.Providers
                     ClaimsIdentity claimsIdentity = new ClaimsIdentity(context.Options.AuthenticationType);
                     claimsIdentity.AddClaim(new Claim("sub", context.UserName));
                     claimsIdentity.AddClaim(new Claim(ClaimTypes.Email, context.UserName));
-                    claimsIdentity.AddClaim(new Claim("role", "user"));                                        
+                    claimsIdentity.AddClaim(new Claim(ClaimTypes.Role, "user"));                                        
 
-                    context.Validated(claimsIdentity);
-                    return;
+                    context.Validated(claimsIdentity);                    
                 }
                 else
                 {

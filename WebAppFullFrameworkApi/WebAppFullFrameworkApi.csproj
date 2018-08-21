@@ -142,10 +142,8 @@
     <Compile Include="Models\AuthCheck.cs" />
     <Compile Include="Models\AuthContext.cs" />
     <Compile Include="Models\AuthRepository.cs" />
-    <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\DatabaseContext.cs" />
     <Compile Include="Models\IAuthRepository.cs" />
-    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\SimpleAuthorizationServerProvider.cs" />
     <Compile Include="Startup.cs" />
@@ -162,6 +160,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shareds\Shareds.csproj">
+      <Project>{f2ff114b-611d-4c35-9997-6e88c8394ccc}</Project>
+      <Name>Shareds</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

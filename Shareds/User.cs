@@ -1,6 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.ComponentModel.DataAnnotations;
 
-namespace WebAppFullFrameworkApi.Models
+namespace Shareds
 {
     public sealed class User
     {
