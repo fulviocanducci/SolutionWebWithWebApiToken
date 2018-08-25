@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -120,7 +122,7 @@ namespace WebAppCoreApi.Controllers
 
         private bool CommentExists(int id)
         {
-            return _context.Comment.Any(e => e.Id == id);
+            return _context.Comment.Any(e => e.Id == id);            
         }
     }
 }
